@@ -1,4 +1,9 @@
-.expence_date{
+.expence_year , .expence_month , .expence_day{
     color: #fff;
-    font-size: 12px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.date_wrapper{
+    border: 1px solid #fff;
+    padding: 10px 15px;
 }
