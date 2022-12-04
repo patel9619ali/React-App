@@ -1,5 +1,8 @@
+import React from 'react';
 import ExpenceItem from "./Component/Expence Component/ExpenceItems";
-function App() {
+import Card from './Component/Expence Component/Card';
+import './App.css';
+const App = () => {
   const expenses = [
     {
       id: 'e1',
@@ -26,12 +29,15 @@ function App() {
       date: new Date(2021, 5, 12),
     },
   ];
-  return (
-    <div>
+  // return React.createElement(Card , {className: main_wrapper}, React.createElement(ExpenceItem,{title : expenses[0].title, amount:expenses[0].amount,dates:expenses[0].date})
+return(
+      <Card className='main_wrapper'>
       <ExpenceItem title={expenses[0].title} amount={expenses[0].amount} dates={expenses[0].date}/>
-    </div>
+      <ExpenceItem title={expenses[1].title} amount={expenses[1].amount} dates={expenses[1].date}/>
+      <ExpenceItem title={expenses[2].title} amount={expenses[2].amount} dates={expenses[2].date}/>
+      <ExpenceItem title={expenses[3].title} amount={expenses[3].amount} dates={expenses[3].date}/>
+      </Card>
   );
-}
+};
 
 export default App;
-s

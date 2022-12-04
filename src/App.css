@@ -1,0 +1,11 @@
+.main_wrapper{
+    border: 1px solid #000;
+    width: 80%;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    padding: 20px 15px;
+    background-color: #000;
+    transform: translate(-50%);
+}

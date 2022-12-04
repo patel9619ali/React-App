@@ -1,6 +1,9 @@
-function ExpenceAmount(props){
+import Card from '../Expence Component/Card'
+import '../Expence Component/ExpenceAmount.css'
+const ExpenceAmount = props =>
+{
     return (
-        <p className="expence_content">${props.amounts}</p>
+        <Card className="expence_content">${props.amounts}</Card>
     )
 };
 export default ExpenceAmount;
