@@ -1,0 +1,18 @@
+.expence_wrapper{
+    display: flex;
+    background-color: #3f3f3f;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.expence_wrapper:not(:last-child){
+    margin-bottom: 10px;
+}
+.btn_click{
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #fff;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px;
+}
