@@ -1,0 +1,32 @@
+.form_wrapper{
+    margin-bottom: 30px;
+    background: #9896c6;
+    padding: 30px;
+}
+.title_form_wrapper , .amount_form_wrapper {
+   width: 50%;
+   display: inline-block;
+   margin-bottom: 10px;
+   text-align: start;
+}
+.date_form_wrapper{
+    display: block;
+    text-align: start;
+    margin-bottom: 10px;
+}
+.input_customize{
+    padding: 20px 20px;
+    text-align: center;
+    font-size: 18px;
+}
+label{
+    font-size: 20px;
+    display: block;
+}
+.button_input{
+    padding: 10px 30px;
+    display: block;
+    background-color: blueviolet;
+    color: #fff;
+    font-weight: 700;
+}
