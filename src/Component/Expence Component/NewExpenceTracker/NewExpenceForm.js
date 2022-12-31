@@ -1,6 +1,6 @@
 import React , {useState} from 'react';
 import '../NewExpenceTracker/NewExpenceForm.css'
-const NewExpenceForm = () => {
+const NewExpenceForm = (props) => {
     let [changeTitle , setChangeTitle] = useState('');  
     let [changeAmount , setChangeAmount] = useState('');  
     let [changeDate , setChangeDate] = useState('');  
@@ -38,7 +38,10 @@ const NewExpenceForm = () => {
             amount: changeAmount,
             date: new Date(changeDate),
         }
-        console.log(expensedata.title)
+        props.onSubmitExpense(expensedata);
+        console.log(expensedata.title);
+        console.log(expensedata.amount);
+        console.log(expensedata.date);
         setChangeTitle('')
         setChangeAmount('')
         setChangeDate('')
